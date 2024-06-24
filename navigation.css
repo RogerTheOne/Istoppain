@@ -1,0 +1,66 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #fff;
+}
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+.navbar-brand img {
+    height: 60px;
+    margin-left: 70px;
+}
+.navbar-brand span {
+    font-size: 1.5rem;
+    color: #d9534f;
+    font-weight: bold;
+}
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    margin: 0;
+}
+.navbar-nav li {
+    margin: 0 15px; /* 设定每个链接之间的间距 */
+}
+.navbar-nav a {
+    text-decoration: none;
+    color: #555;
+    display: block;
+    padding: 1rem;
+    font-weight: bold;
+    position: relative;
+}
+.navbar-nav a:hover {
+    color: #5cb85c;
+}
+.navbar-nav a.active {
+    color: #5cb85c;
+}
+.navbar-nav a.active::after {
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    padding-top: 5px;
+    border-bottom: 3px solid #5cb85c;
+}
+.navbar-social {
+    display: flex;
+    align-items: center;
+}
+.navbar-social a {
+    text-decoration: none;
+    color: #555;
+    margin-left: 10px;
+}
+.navbar-social a img {
+    height: 40px;
+    margin-right: 70px;
+}
