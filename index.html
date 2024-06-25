@@ -89,7 +89,7 @@
         </div>
         <div class="row align-items-center mt-4">
             <div class="col-md-8 order-md-1">
-                <h2>Acupuncture</h2>
+                <h2 id="acupuncture">Acupuncture</h2>
                 <p>Acupuncture and other Chinese medicines are based on meridians, a subtle energy system discovered by the Chinese over 5,000 years ago. We restore meridian balance and activate the body's self-healing power, addressing the root cause of illness for long-term healing.</p>
                 <a href="#" class="btn btn-secondary">Learn More About Acupuncture</a>
             </div>
@@ -102,7 +102,7 @@
                 <img src="pic/Herbalism.jpg" alt="Herbalism" class="img-fluid rounded-circle">
             </div>
             <div class="col-md-8">
-                <h2>Herbalism</h2>
+                <h2 id="chinese-herbal-medicine">Herbalism</h2>
                 <p>Chinese herbal medicine is highly evolved and sophisticated. Its development over millennia has resulted in an immense repository of knowledge. This ancient practice encompasses countless trillions of administrations over thousands of years.</p>
                 <a href="#" class="btn btn-secondary">Learn More About Herbalism</a>
             </div>
@@ -141,45 +141,46 @@
         </div>
     </div>
 
-    <footer class="bg-light mt-5">
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-md-3">
-                    <h5>The Clinic</h5>
-                    <ul class="list-unstyled">
-                        <li>Chinese Medicine Centre</li>
-                        <li>26 May Street</li>
-                        <li>East Fremantle</li>
-                        <li>Perth WA 6158</li>
-                    </ul>
-                    <p><strong>Talk to Us:</strong></p>
-                    <p>Call 08 9339 8988</p>
-                </div>
-                <div class="col-md-3">
-                    <h5>Our Treatments</h5>
-                    <ul class="list-unstyled">
-                        <li>Acupuncture</li>
-                        <li>Chinese herbal medicine</li>
-                    </ul>
-                    <div class="input-group mt-3">
-                        <input type="text" class="form-control" placeholder="Search">
-                        <button class="btn btn-outline-secondary" type="button">
-                            <i class="fas fa-search"></i>
-                        </button>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <h5>Book Appointments Online</h5>
-                    <p>Use this section to book an appointment online. Your confirmation email will allow you to reschedule or cancel your appointment.</p>
-                    <a href="#" class="btn btn-primary">Book Now</a>
-                </div>
-                <div class="col-md-3">
-                    <h5>Our Practitioners</h5>
-                    <img src="pic/Our Team.png" alt="Practitioner 1" class="img-fluid mb-2">
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Footer Example</title>
+</head>
+<body>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>THE CLINIC</h3>
+                <p>Chinese Medicine Centre<br>6021 Young St<br>Halifax<br>NS B3K 2A1</p>
+                <p><strong>TALK TO US</strong><br>Call 08 9339 8988</p>
+            </div>
+            <div class="footer-section">
+                <h3>OUR TREATMENTS</h3>
+                <a href="#acupuncture"><button>Acupuncture</button></a>
+                <a href="#chinese-herbal-medicine"><button>Chinese Herbal Medicine</button></a>
+            
+                
+            </div>
+            <div class="footer-section">
+                <h3>BOOK APPOINTMENTS ONLINE</h3>
+                <p>Use this section to book an appointment online. Your confirmation email will allow you to reschedule or cancel your appointment.</p>
+                <button>Book Now</button>
+            </div>
+            <div class="footer-section">
+                <h3>OUR PRACTITIONERS</h3>
+                <div class="practitioners">
+                    <img src="pic/logo.png" alt="Practitioner 1">
+                    
                 </div>
             </div>
         </div>
     </footer>
+</body>
+</html>
+
 
     <script>
         let currentSlide = 0;
