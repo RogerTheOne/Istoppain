@@ -1,26 +1,37 @@
 body {
     font-family: Arial, sans-serif;
+    width: 100%;
+    margin: 0px; /* 移除默认的页面边距 */
 }
-.main-text{
+.main-text {
     text-align: left;
     padding-bottom: 70px;
 }
+
+.main-text p {
+    font-size: 20px;
+}
+
 .carousel {
     position: relative;
     width: 100%;
     overflow: hidden;
 }
+
 .carousel-inner {
     display: flex;
     transition: transform 1s ease-in-out;
 }
+
 .carousel-item {
     min-width: 100%;
 }
+
 .carousel img {
     width: 100%;
     display: block;
 }
+
 .carousel-control-prev, .carousel-control-next {
     position: absolute;
     top: 50%;
@@ -30,12 +41,15 @@ body {
     padding: 0.5rem;
     cursor: pointer;
 }
+
 .carousel-control-prev {
     left: 0;
 }
+
 .carousel-control-next {
     right: 0;
 }
+
 .carousel-indicators {
     position: absolute;
     bottom: 20px;
@@ -44,6 +58,7 @@ body {
     display: flex;
     gap: 5px;
 }
+
 .carousel-indicators button {
     width: 12px;
     height: 12px;
@@ -53,15 +68,18 @@ body {
     cursor: pointer;
     opacity: 0.5;
 }
+
 .carousel-indicators button.active {
     opacity: 1;
 }
+
 .carousel-buttons {
     display: flex;
     justify-content: center;
     gap: 10px;
     margin-top: 10px;
 }
+
 .carousel-buttons button {
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
@@ -78,38 +96,68 @@ body {
 p {
     font-size: 1.5rem;
 }
+
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
+    max-width: 100%;
 }
+
 .row {
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 2rem;;
 }
+.row.welcome{
+    padding-inline: 10%;
+}
+
+.row.align-items-center.mt-4.second{
+    padding-inline: 10%;
+}
+
+.row.align-items-center.mt-4.light-grey-background {
+    background-color: #f0f0f0; /* 设置背景颜色 */
+    width: 100%; /* 设置宽度为100% */
+    padding-inline: 10%;
+    padding-top: 5%;
+    box-sizing: border-box; /* 确保内边距和边框包含在宽度和高度内 */
+}
+.row.align-items-center.mt-5{
+    padding-inline: 10%;
+}
+
 .col-md-4, .col-md-8, .col-12 {
     flex: 1;
 }
+
 .col-md-4 {
     max-width: 33.333%;
 }
+
 .col-md-8 {
     max-width: 66.666%;
 }
+
+.col-md-8 p {
+    font-size: 20px;
+}
+
 .col-12 {
     max-width: 100%;
 }
+
 .text-center {
     text-align: center;
 }
+
 .img-fluid {
     max-width: 100%;
     height: auto;
 }
+
 .rounded-circle {
     border-radius: 50%;
 }
+
 .btn {
     display: inline-block;
     padding: 0.5rem 1rem;
@@ -121,19 +169,22 @@ p {
     cursor: pointer;
     text-align: center;
 }
+
 .btn-secondary {
     background-color: #6c757d;
 }
+
 .bg-light {
     background-color: #f8f9fa;
 }
+
 .mt-5 {
     margin-top: 3rem;
 }
+
 .py-5 {
     padding: 3rem 0;
 }
-
 
 footer {
     background-color: #e0e0e0;
@@ -181,7 +232,6 @@ footer {
     padding: 10px;
     margin-top: 10px;
     border: 1px solid #ccc;
-    
 }
 
 .footer-section button {
