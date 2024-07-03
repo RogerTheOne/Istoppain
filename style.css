@@ -98,13 +98,16 @@ p {
 }
 
 .container {
+    align-items: center;
     max-width: 100%;
+    padding-inline: 30px;
+    
 }
 
 .row {
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;;
+    gap: 2rem;
 }
 .row.welcome{
     padding-inline: 10%;
@@ -114,17 +117,20 @@ p {
     padding-inline: 10%;
 }
 
-.row.align-items-center.mt-4.light-grey-background {
+.row.align-items-center.mt-4{
+    display: flex;
+    align-items: center ;
     background-color: #f0f0f0; /* 设置背景颜色 */
     width: 100%; /* 设置宽度为100% */
     padding-inline: 10%;
     padding-top: 5%;
+    padding-bottom: 5%;
     box-sizing: border-box; /* 确保内边距和边框包含在宽度和高度内 */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgb(240, 240, 240);
+    border-radius: 5px;
+    margin-bottom: 20px;
 }
-.row.align-items-center.mt-5{
-    padding-inline: 10%;
-}
-
 .col-md-4, .col-md-8, .col-12 {
     flex: 1;
 }
@@ -136,9 +142,15 @@ p {
 .col-md-8 {
     max-width: 66.666%;
 }
+.col-md-8 h2{
+    font-size: 30px;
+    font-style: oblique;
+    color: #29772c;
+}
 
 .col-md-8 p {
     font-size: 20px;
+    color: #606161;
 }
 
 .col-12 {
@@ -159,23 +171,22 @@ p {
 }
 
 .btn {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    margin: 0.5rem 0;
-    background-color: #007bff;
-    color: #fff;
-    text-decoration: none;
-    border: none;
-    cursor: pointer;
-    text-align: center;
+    background-color: #29772c; /* 按钮背景颜色 */
+            color: white; /* 按钮字体颜色 */
+            padding: 10px 20px; /* 按钮内边距 */
+            border: none; /* 移除按钮边框 */
+            border-radius: 25px; /* 按钮圆角 */
+            font-size: 16px; /* 按钮字体大小 */
+            cursor: pointer; /* 鼠标悬停时显示为指针 */
+            text-align: center; /* 文本居中 */
+            text-decoration: none; /* 移除文本下划线 */
+            display: inline-block; /* 使按钮与其他元素在一行显示 */
+            transition: background-color 0.3s; /* 背景颜色渐变效果 */
 }
 
-.btn-secondary {
-    background-color: #6c757d;
-}
 
 .bg-light {
-    background-color: #f8f9fa;
+    background-color: #29772c;
 }
 
 .mt-5 {
