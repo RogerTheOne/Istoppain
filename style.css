@@ -271,6 +271,9 @@ footer {
     height: 80px;
 }
 
+
+
+
 .testimonial-slider {
     width: 80%;
     margin: 50px auto;
@@ -279,7 +282,7 @@ footer {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    padding: 40px; /* 增加整体两边的padding */
 }
 .testimonial-slides {
     display: flex;
@@ -288,10 +291,11 @@ footer {
 .testimonial-slide {
     min-width: 33.33%;
     box-sizing: border-box;
-    padding: 20px;
+    padding: 50px; /* 增加评论之间的间距 */
     display: flex;
     align-items: flex-start;
     text-align: left;
+    margin-bottom: 0px;
 }
 .slide-content {
     display: flex;
@@ -304,7 +308,7 @@ footer {
     margin-right: 20px;
 }
 .testimonial-slide p {
-    font-size: 16px;
+    font-size: 26px;
     color: #333;
     margin: 0;
 }
@@ -330,6 +334,10 @@ footer {
 .testimonial-indicator.active {
     background-color: #333;
 }
+
+
+
+
 .testimonial-slide div img {
     width: 20px;
     height: 20px;
