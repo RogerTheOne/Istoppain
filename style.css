@@ -270,3 +270,68 @@ footer {
     width: 320px;
     height: 80px;
 }
+
+.testimonial-slider {
+    width: 80%;
+    margin: 50px auto;
+    overflow: hidden;
+    position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+.testimonial-slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.testimonial-slide {
+    min-width: 33.33%;
+    box-sizing: border-box;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+}
+.slide-content {
+    display: flex;
+    align-items: flex-start;
+}
+.testimonial-slide img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.testimonial-slide p {
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+}
+.testimonial-slide span {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #555;
+}
+.testimonial-indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.testimonial-indicator {
+    width: 10px;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.testimonial-indicator.active {
+    background-color: #333;
+}
+.testimonial-slide div img {
+    width: 20px;
+    height: 20px;
+    margin-top: 5px
+}
