@@ -129,7 +129,7 @@ p {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-color: rgb(240, 240, 240);
     border-radius: 5px;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
 }
 .col-md-4, .col-md-8, .col-12 {
     flex: 1;
@@ -151,10 +151,15 @@ p {
 .col-md-8 p {
     font-size: 20px;
     color: #606161;
+    line-height: 1.6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .col-12 {
     max-width: 100%;
+}
+.col-12 h1{
+    color: #29772c;
 }
 
 .text-center {
@@ -272,26 +277,32 @@ footer {
 }
 
 
-
+.review-section{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 30px;
+}
 
 .testimonial-slider {
-    width: 80%;
-    margin: 50px auto;
+
+    
     overflow: hidden;
     position: relative;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 40px; /* 增加整体两边的padding */
+    background-color: rgba(238, 238, 238, 0.568);
+    padding-inline: 80px; /* 增加整体两边的padding */
 }
 .testimonial-slides {
     display: flex;
-    transition: transform 0.5s ease-in-out;
+
+    transition: transform 1s ease-in-out;
 }
 .testimonial-slide {
     min-width: 33.33%;
     box-sizing: border-box;
-    padding: 50px; /* 增加评论之间的间距 */
+    padding-inline: 80px; /* 增加评论之间的间距 */
+    padding-top: 40px;
+    padding-bottom: 40px;
     display: flex;
     align-items: flex-start;
     text-align: left;
@@ -308,7 +319,7 @@ footer {
     margin-right: 20px;
 }
 .testimonial-slide p {
-    font-size: 26px;
+    font-size: 20px;
     color: #333;
     margin: 0;
 }
@@ -322,6 +333,7 @@ footer {
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    padding-bottom: 20px;
 }
 .testimonial-indicator {
     width: 10px;
@@ -334,10 +346,6 @@ footer {
 .testimonial-indicator.active {
     background-color: #333;
 }
-
-
-
-
 .testimonial-slide div img {
     width: 20px;
     height: 20px;
