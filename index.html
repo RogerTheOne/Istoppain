@@ -6,7 +6,6 @@
     <title>Image Carousel</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="navigation.css">
-    
 </head>
 <body>
     <nav class="navbar">
@@ -16,7 +15,7 @@
         <ul class="navbar-nav">
             <li><a href="#" class="active">Home</a></li>
             <li><a href="#">About</a></li>
-            <li><a href="#">Acupuncture</a></li>
+            <li><a href="acupunture.html">Acupuncture</a></li>
             <li><a href="#">Herbal Remedy</a></li>
             <li><a href="#">FAQ</a></li>
             <li><a href="#">Hours and Fees</a></li>
@@ -135,7 +134,7 @@
             <div class="testimonial-slide">
                 <img src="pic/googlelogo.png" alt="Profile Image">
                 <div>
-                    <p>I started to see Tom three weeks ago for my shoulder pain where l had really limited range of motion and causing my fingers and wrist to tense up on a daily basis. I received treatment 3 times now and my pain has subsided to nearly no pain and my range of motion is almost back to normal, I felt a lot of release in my upper back. To anyone who is on the fence about acupuncture, give it a try, you will be glad you did! Highly Recommend!</p>
+                    <p>I started to see Tom three weeks ago for my shoulder pain where l had really limited range of motion and causing my fingers and wrist to tense up on a daily basis. I received treatment 3 times now and my pain has subsided to nearly no pain and my range of motion is almost back to normal, I felt a lot of release in my upper back. Highly Recommend!</p>
                     <span>Matthew Scott</span>
                     <img src="pic/star.png"><img src="pic/star.png"><img src="pic/star.png"><img src="pic/star.png"><img src="pic/star.png">
                 </div>
@@ -204,44 +203,6 @@
             <div class="testimonial-indicator" data-slide="7"></div>
         </div>
     </div>
-    
-
-    <script>
-        const testimonialSlides = document.querySelector('.testimonial-slides');
-        const testimonialIndicators = document.querySelectorAll('.testimonial-indicator');
-        let currentTestimonialIndex = 0;
-
-        function showTestimonialSlide(index) {
-            testimonialSlides.style.transform = `translateX(-${index * 100 / 3}%)`;
-            testimonialIndicators.forEach((indicator, i) => {
-                indicator.classList.toggle('active', i === index);
-            });
-        }
-
-        function nextTestimonialSlide() {
-            currentTestimonialIndex = (currentTestimonialIndex + 1) % testimonialIndicators.length;
-            showTestimonialSlide(currentTestimonialIndex);
-        }
-
-        setInterval(nextTestimonialSlide, 3000);
-
-        testimonialIndicators.forEach((indicator, index) => {
-            indicator.addEventListener('click', () => {
-                showTestimonialSlide(index);
-                currentTestimonialIndex = index;
-            });
-        });
-    </script>
-
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Footer Example</title>
-</head>
-<body>
     <footer>
         <div class="footer-container">
             <div class="footer-section">
@@ -274,52 +235,6 @@
             </div>
         </div>
     </footer>
-</body>
-</html>
-
-
-    <script>
-        let currentSlide = 0;
-        const slides = document.querySelectorAll('.carousel-item');
-        const totalSlides = slides.length;
-        const indicators = document.querySelectorAll('.carousel-indicators button');
-        let slideInterval;
-
-        function showSlide(index) {
-            const carouselInner = document.querySelector('.carousel-inner');
-            carouselInner.style.transform = `translateX(-${index * 100}%)`;
-            indicators.forEach((indicator, i) => {
-                indicator.classList.toggle('active', i === index);
-            });
-        }
-
-        function prevSlide() {
-            currentSlide = (currentSlide === 0) ? totalSlides - 1 : currentSlide - 1;
-            showSlide(currentSlide);
-        }
-
-        function nextSlide() {
-            currentSlide = (currentSlide === totalSlides - 1) ? 0 : currentSlide + 1;
-            showSlide(currentSlide);
-        }
-
-        function goToSlide(index) {
-            currentSlide = index;
-            showSlide(currentSlide);
-        }
-
-        function playSlides() {
-            slideInterval = setInterval(nextSlide, 4000);
-        }
-
-        function pauseSlides() {
-            clearInterval(slideInterval);
-        }
-
-        document.addEventListener('DOMContentLoaded', () => {
-            showSlide(currentSlide);
-            playSlides();
-        });
-    </script>
+    <script src="scripts.js"></script>
 </body>
 </html>
