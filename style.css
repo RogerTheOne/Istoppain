@@ -351,3 +351,43 @@ footer {
     height: 20px;
     margin-top: 5px
 }
+
+.social-media-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin: 20px;
+}
+.social-media-text {
+    flex: 1; 
+    padding: 40px; 
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    height: 800px; 
+}
+.social-media-text h2 {
+    font-size: 70px; 
+    color: #333; 
+    margin-bottom: 10px; 
+}
+
+.social-media-post {
+    flex: 1;
+    margin: 10px;
+}
+.social-media-post iframe {
+    width: 100%; 
+    height: 800px; 
+}
+.social-media-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #4CAF50; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
