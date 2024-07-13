@@ -6,40 +6,6 @@
     <title>Acupuncture</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="navigation.css">
-    <style>
-        .toggle-content {
-    cursor: pointer;
-    font-size: 16px; 
-
-    padding: 10px;
-    background-color: #f5f5f5; 
-    border: 1px solid #ccc; 
-    border-radius: 5px;
-    margin-bottom: 5px; 
-}
-
-.content {
-    padding: 10px;
-    border: 1px solid #ccc; 
-    border-radius: 5px;
-    background-color: #fff; 
-    display: none; 
-}
-
-.content p {
-    margin-bottom: 20px; 
-    font-size: 14px;
-    color: #666; 
-}
-
-.content li {
-    list-style-type: disc; 
-    margin-left: 50px; 
-    font-size: 14px; 
-    color: #666; 
-}
-
-    </style>
 </head>
 <body>
     <nav class="navbar">
@@ -56,38 +22,45 @@
         </ul>
     </nav>
 
-    <div class="container">
+    <div class="acu-image-container">
+        <img src="pic/acupunctureTitle.jpg" alt="pic">
+        <div class="acu-title-text">Acupuncture</div>
+    </div>
+
+    <div class="acu-container">
         <h1>Treat Pain with Acupuncture</h1>
         <p>
-            Acupuncture is best known for its ability to successfully treat pain. Pain itself isnot a diagnosis, but rather an indication or warning that there is a problemsomewhere in the body. Many times the exact location of pain points to where theproblem is, as in the case of elbow pain above an inflamed tendon. But in othersituations the site of pain may be related to problems far away, as in leg painresulting from a herniated disk pushing on a nerve in the back.
+            Acupuncture is best known for its ability to successfully treat pain. Pain itself is not a diagnosis, but rather an indication or warning that there is a problem somewhere in the body. Many times the exact location of pain points to where the problem is, as in the case of elbow pain above an inflamed tendon. But in other situations the site of pain may be related to problems far away, as in leg pain resulting from a herniated disk pushing on a nerve in the back.
         </p>
         <p>
-            The intensity of the pain usually indicates or warns how severe the problem is.Each person has a different pain threshold, but pain levels that increase or do notlessen over time point to something that needs attention.
+            The intensity of the pain usually indicates or warns how severe the problem is. Each person has a different pain threshold, but pain levels that increase or do not lessen over time point to something that needs attention.
         </p>
         <p>
-            And the circumstances surrounding the onset of the pain are just as important.Was there an accident or incident? Or did the pain gradually develop over acourse of time or during a certain period of life?
+            And the circumstances surrounding the onset of the pain are just as important. Was there an accident or incident? Or did the pain gradually develop over a course of time or during a certain period of life?
         </p>
         <p>
-            The characteristics of pain give important information about what is causing thebody to send this signal. Once noticed, it is important to address the underlyingproblem that forced the body to send a pain message, not just turn down thediscomfort. Otherwise the body will send out other warning signals until the coreproblem is corrected.
+            The characteristics of pain give important information about what is causing the body to send this signal. Once noticed, it is important to address the underlying problem that forced the body to send a pain message, not just turn down the discomfort. Otherwise the body will send out other warning signals until the core problem is corrected.
         </p>
     </div>
 
-    <div id="toggle-view" class="toggle-content">
-        How does acupuncture stop pain?
-    </div>
-    <div id="hidden-content" class="content">
-        <p>
-            There are many therapies that attempt to stop pain. Most of them mask the pain while hoping the body is able to heal itself or push the body to heal faster while offering limited pain relief. Acupuncture is an extremely powerful and effective approach to treat pain because it decreases pain levels as it stimulates the bodys healing response. Acupuncture resolves pain by affecting several pain pathways and healing responses at the same time:
-        </p>
-        <li>raise endorphin levels and diminish the nervous systems pain response </li>
-        <li>decrease inflammation and swelling </li>
-        <li>relax muscles and stop spasms </li>
-        <li>increase circulation to the local area </li>
+    <div class="acu-container">
+        <h1 id="acu-toggle-view" class="acu-toggle-content">How does acupuncture stop pain?</h1>
+        <div id="acu-hidden-content" class="acu-content">
+            <p>
+                There are many therapies that attempt to stop pain. Most of them mask the pain while hoping the body is able to heal itself or push the body to heal faster while offering limited pain relief. Acupuncture is an extremely powerful and effective approach to treat pain because it decreases pain levels as it stimulates the body's healing response. Acupuncture resolves pain by affecting several pain pathways and healing responses at the same time:
+            </p>
+            <ul>
+                <li>Raise endorphin levels and diminish the nervous system's pain response</li>
+                <li>Decrease inflammation and swelling</li>
+                <li>Relax muscles and stop spasms</li>
+                <li>Increase circulation to the local area</li>
+            </ul>
+        </div>
     </div>
     
     <script>
-        document.getElementById('toggle-view').addEventListener('click', function() {
-            var content = document.getElementById('hidden-content');
+        document.getElementById('acu-toggle-view').addEventListener('click', function() {
+            var content = document.getElementById('acu-hidden-content');
             if (content.style.display === 'none') {
                 content.style.display = 'block';
             } else {
@@ -96,10 +69,52 @@
         });
     </script>
 
+    <div class="acu-container">
+        <h1>How many treatments will I need?</h1>
+        <p>
+            This varies considerably based on the specific condition being treated. Each person receives an individualized treatment plan based on age, past medical history, lifestyle, treatment goals and current pain status. Generally speaking however, acute pain (less than 3 months duration) is often resolved in a short series of treatments spaced close together and chronic pain requires consistent regular treatment to achieve long-term pain relief.
+        </p>
+    </div>
+
+    <div class="acu-container">
+        <h1>How else will acupuncture help me deal with my pain?</h1>
+        <p>
+            Almost every person finds acupuncture treatments to be very relaxing. Many do not expect this effect, especially dealing with painful conditions, but acupuncture balances various parts of the body together. This results in a person feeling calm, peaceful and very relaxed. Pain is stressful and can wear someone down causing irritability, tension and insomnia. By relaxing the whole person, acupuncture also helps eliminate these other negative aspects of pain. And it does so in a natural way, with no negative side effects.
+        </p>
+        <p>
+            Acupuncture also looks at the entire person, not just the one part that hurts. This means an acupuncturist will offer suggestions for individual lifestyle improvements regarding exercise, supplements and diet, sleeping and stress management techniques to help a person improve health and decrease pain.
+        </p>
+    </div>
+
     <footer>
         <div class="footer-container">
-            <!-- Footer content here -->
+            <div class="footer-section">
+                <h3>THE CLINIC</h3>
+                <p>Chinese Medicine Centre<br>6021 Young St<br>Halifax<br>NS B3K 2A1</p>
+                <p><strong>TALK TO US</strong><br>Call 08 9339 8988</p>
+            </div>
+            <div class="footer-section">
+                <h3>OUR TREATMENTS</h3>
+                <a href="#acupuncture"><button>Acupuncture</button></a>
+                <a href="#chinese-herbal-medicine"><button>Chinese Herbal Medicine</button></a>
+            </div>
+            <div class="footer-section">
+                <h3>BOOK APPOINTMENTS ONLINE</h3>
+                <p>Use this section to book an appointment online. Your confirmation email will allow you to reschedule or cancel your appointment.</p>
+                <button>Book Now</button>
+            </div>
+            <div class="footer-section">
+                <h3>OUR PRACTITIONERS</h3>
+                <div class="practitioners">
+                    <img src="pic/logo.png" alt="Practitioner 1">
+                </div>
+            </div>
+            <div class="navbar-social">
+                <a href="#"><i class="fas fa-search"></i></a>
+                <a href="https://www.facebook.com"><img src="pic/facebook-icon.png" alt="Facebook"></a>
+            </div>
         </div>
     </footer>
+    <script src="scripts.js"></script>
 </body>
 </html>
