@@ -6,6 +6,8 @@
     <title>Acupuncture</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="navigation.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="acu.css">
 </head>
 <body>
     <nav class="navbar">
@@ -44,11 +46,12 @@
     </div>
 
     <div class="acu-container">
+        <h1>How does acupuncture stop pain?</h1>
+        <p>
+            There are many therapies that attempt to stop pain. Most of them mask the pain while hoping the body is able to heal itself or push the body to heal faster while offering limited pain relief. Acupuncture is an extremely powerful and effective approach to treat pain because it decreases pain levels as it stimulates the body's healing response. Acupuncture resolves pain by affecting several pain pathways and healing responses at the same time:
+        </p>
         <h1 id="acu-toggle-view" class="acu-toggle-content">How does acupuncture stop pain?</h1>
         <div id="acu-hidden-content" class="acu-content">
-            <p>
-                There are many therapies that attempt to stop pain. Most of them mask the pain while hoping the body is able to heal itself or push the body to heal faster while offering limited pain relief. Acupuncture is an extremely powerful and effective approach to treat pain because it decreases pain levels as it stimulates the body's healing response. Acupuncture resolves pain by affecting several pain pathways and healing responses at the same time:
-            </p>
             <ul>
                 <li>Raise endorphin levels and diminish the nervous system's pain response</li>
                 <li>Decrease inflammation and swelling</li>
@@ -57,17 +60,6 @@
             </ul>
         </div>
     </div>
-    
-    <script>
-        document.getElementById('acu-toggle-view').addEventListener('click', function() {
-            var content = document.getElementById('acu-hidden-content');
-            if (content.style.display === 'none') {
-                content.style.display = 'block';
-            } else {
-                content.style.display = 'none';
-            }
-        });
-    </script>
 
     <div class="acu-container">
         <h1>How many treatments will I need?</h1>
@@ -116,5 +108,6 @@
         </div>
     </footer>
     <script src="scripts.js"></script>
+    <script src="acu.js"></script>
 </body>
 </html>
