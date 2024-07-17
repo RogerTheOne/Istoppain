@@ -73,6 +73,11 @@
     line-height: 1.5;
     padding-inline: 15%;
 }
+
+.acu-container.last p:nth-of-type(2){
+    padding-bottom: 70px;
+}
+
 .acu-toggle-content {
     cursor: pointer;
     font-size: 24px; 

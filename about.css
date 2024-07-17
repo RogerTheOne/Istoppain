@@ -35,8 +35,8 @@
     max-width: 100%;
     padding-inline: 2%;
     background-color: #fff;
-    
 }
+
 .abt-container h1 {
     padding-top: 70px;
     color: #29772c;
@@ -53,7 +53,7 @@
     align-items: center;
     border-radius: 0px;
     padding-inline: 15%;
-    
+    margin-bottom: 70px;
 }
 .image-container {
     flex: 1;
