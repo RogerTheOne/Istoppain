@@ -1,3 +1,85 @@
+:root {
+    --berry: #0f9437;
+    --orange: #FAB37A;
+    --wave: #286C93;
+    --pink: #FAC2C7;
+    --plum: #0c5e31;
+    --egg: #FFF5F5;
+}
+
+h1 {
+    font-family: 'Calistoga', serif;
+    color:var(--berry); 
+    font-size: 55px;
+    line-height: 65px;
+    letter-spacing:1px;
+    margin-bottom:56px;
+}
+
+h2 {
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 600;
+    color:var(--wave); 
+    font-size: 26px;
+    line-height:30px;
+    text-transform:uppercase;
+    margin-bottom: 16px;
+}
+
+h3 {
+    font-family: 'Calistoga', serif;
+    color:var(--egg); 
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 56px;
+}
+
+h4 {
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 600;
+    text-transform:uppercase;
+    color:var(--pink);
+    font-size:14px;
+}
+
+p {
+    font-family: 'Source Sans 3', sans-serif;
+    color:var(--plum); 
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+
+a {
+    text-decoration:none;
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 600;
+    color:var(--wave); 
+    font-size: 16px;
+    line-height: 22px;
+}
+
+button {
+    padding: 8px 24px;
+    border-radius: 15px;
+    border: solid var(--orange) 3px;
+    background:transparent;
+    color: var(--egg);
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 800;
+    text-transform:uppercase;
+    letter-spacing:0.5px;
+    font-size:14px;
+    cursor: pointer;
+}
+  
+button:hover {
+    background: #499BBF;
+    border: solid #499BBF 3px;
+    color:var(--egg);
+    transition-duration:.2s;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0px; /* 移除默认的页面边距 */
@@ -97,7 +179,7 @@ body {
 .container {
     align-items: center;
     max-width: 100%;
-    padding-inline: 2%;
+
     
 }
 
@@ -107,57 +189,9 @@ body {
     gap: 2rem;
 }
 .row.welcome{
-    padding-inline: 15%;
+    padding-inline: 12%;
 }
 
-.row.align-items-center.mt-4.second{
-    padding-inline: 15%;
-}
-
-.row.align-items-center.mt-4{
-    display: flex;
-    align-items: center ;
-    background-color: #f0f0f0; /* 设置背景颜色 */
-    width: 100%; /* 设置宽度为100% */
-    padding-inline: 15%;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    box-sizing: border-box; /* 确保内边距和边框包含在宽度和高度内 */
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    background-color: rgb(240, 240, 240);
-    border-radius: 5px;
-    margin-bottom: 60px;
-}
-.col-md-4, .col-md-8, .col-12 {
-    flex: 1;
-}
-
-.col-md-4 {
-    max-width: 33.333%;
-}
-
-.col-md-8 {
-    max-width: 66.666%;
-}
-.col-md-8 h2{
-    font-size: 30px;
-    font-style: oblique;
-    color: #29772c;
-}
-
-.col-md-8 p {
-    font-size: 20px;
-    color: #606161;
-    line-height: 1.6;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.col-12 {
-    max-width: 100%;
-}
-.col-12 h1{
-    color: #29772c;
-}
 
 .text-center {
     text-align: center;
@@ -172,25 +206,6 @@ body {
     border-radius: 50%;
 }
 
-.btn {
-    background-color: #29772c; /* 按钮背景颜色 */
-            color: white; /* 按钮字体颜色 */
-            padding: 10px 20px; /* 按钮内边距 */
-            border: none; /* 移除按钮边框 */
-            border-radius: 25px; /* 按钮圆角 */
-            font-size: 20px; /* 按钮字体大小 */
-            cursor: pointer; /* 鼠标悬停时显示为指针 */
-            text-align: center; /* 文本居中 */
-            text-decoration: none; /* 移除文本下划线 */
-            display: inline-block; /* 使按钮与其他元素在一行显示 */
-            transition: background-color 0.3s; /* 背景颜色渐变效果 */
-}
-
-
-.bg-light {
-    background-color: #29772c;
-}
-
 .mt-5 {
     margin-top: 3rem;
 }
@@ -198,7 +213,6 @@ body {
 .py-5 {
     padding: 3rem 0;
 }
-
 
 .review-section{
     display: flex;
@@ -318,4 +332,84 @@ body {
 }
 
 
+/*health care card*/
+.healthcare-grid {
+    margin-left:12%;
+    margin-right:12%;
+}
 
+.grid-item {
+    border-radius:16px;
+    background-color: var(--berry);
+    padding:4em;
+    margin-bottom:65px;
+    text-align:center;
+}
+
+.resources {
+    margin-bottom:65px;
+}
+
+.left-column p {
+    margin-bottom:65px;
+}
+
+.grid-item p {
+    margin-bottom: 56px;
+}
+
+.resources p {
+    margin-bottom:28px;
+}
+
+span {
+    color:var(--orange);
+}
+
+a:hover {
+    color: #499BBF;
+    transition-duration:.2s;
+}
+
+
+/*color section*/
+#bluebg {
+    background-color: var(--wave);
+}
+
+#berry {
+    color: var(--berry);
+}
+
+#berrybutton {
+    color: var(--berry);
+    border: solid 3px var(--egg);
+}
+
+#berrybutton:hover {
+    background-color: var(--egg);
+}
+
+#plum {
+    color: var(--plum);
+}
+
+#plumbg {
+    background-color: var(--plum);
+}
+
+#pink {
+    color: var(--pink);
+}
+
+#pinkbg {
+    background-color: var(--pink);
+}
+
+#egg {
+    color: var(--egg);
+}
+
+#orangebg {
+    background-color: var(--orange);
+}
