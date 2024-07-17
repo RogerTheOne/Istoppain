@@ -7,9 +7,9 @@ footer {
 .footer-container {
     display: flex;
     justify-content: space-around;
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 5%;
     flex-wrap: wrap;
     gap: 20px;
 }
@@ -67,10 +67,6 @@ footer {
     gap: 10px;
 }
 
-.practitioners img {
-    width: 320px;
-    height: 80px;
-}
 .practitioners img {
     width: 320px;
     height: 80px;

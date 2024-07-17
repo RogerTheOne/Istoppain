@@ -26,27 +26,40 @@
 }
 .acu-image-container {
     position: relative;
-    text-align: left;
-    max-width: 100%;
-    margin: 0 auto;
+    width: 100%;
+    height: 100vh; /* 让容器占满整个视口高度 */
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
 }
 .acu-image-container img {
     width: 100%;
     height: auto;
 }
-.acu-title-text {
+.blurred-background {
     position: absolute;
-    top: 50%;
-    left: 10%;
-    transform: translateY(-50%);
-    font-size: 200px;
-    font-weight: bold;
-    color: #ffffff;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(8px); /* 根据需要调整模糊效果 */
+    z-index: 1;
 }
+
+.acu-title-text {
+    position: relative;
+    z-index: 2;
+    font-size: 200px; /* 根据需要调整字体大小 */
+    color: white; /* 根据需要调整文字颜色 */
+    white-space: nowrap; /* 防止换行 */
+    font-weight: bold;
+}
+
 .acu-container {
     align-items: center;
     max-width: 100%;
-    padding-inline: 30px;
+    padding-inline: 2%;
     background-color: #fff;
     
 }
