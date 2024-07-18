@@ -6,6 +6,7 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-bottom: 5px;
+    display: inline-block;
 }
 .acu-content {
     padding: 10px;
@@ -13,6 +14,7 @@
     border-radius: 5px;
     background-color: #fff;
     display: none;
+    width: auto;
 }
 .acu-content p, .acu-content li {
     margin-bottom: 20px;
@@ -27,10 +29,10 @@
 .acu-image-container {
     position: relative;
     width: 100%;
-    height: 100vh; /* 让容器占满整个视口高度 */
+    height: 100vh; 
     display: flex;
-    justify-content: center; /* 水平居中 */
-    align-items: center; /* 垂直居中 */
+    justify-content: center; 
+    align-items: center; 
 }
 .acu-image-container img {
     width: 100%;
@@ -43,16 +45,16 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: blur(8px); /* 根据需要调整模糊效果 */
+    filter: blur(8px); 
     z-index: 1;
 }
 
 .acu-title-text {
     position: relative;
     z-index: 2;
-    font-size: 200px; /* 根据需要调整字体大小 */
-    color: white; /* 根据需要调整文字颜色 */
-    white-space: nowrap; /* 防止换行 */
+    font-size: 200px; 
+    color: white; 
+    white-space: nowrap; 
     font-weight: bold;
 }
 
@@ -81,28 +83,57 @@
 
 .acu-toggle-content {
     cursor: pointer;
-    font-size: 24px; 
+    font-size: 30px; 
     color: #333;
     line-height: 1.6;
     margin-bottom: 20px;
     font-weight: bold;
+    color: #29772c;
 }
-.acu-content {
-    padding: 20px; 
-    border: none; 
-    background-color: #fff; 
-    display: none;
-}
+
 .acu-content p, .acu-content li {
     margin-bottom: 20px;
-    font-size: 24px;
+    font-size: 20px;
     color: #666;
     line-height: 1.6;
 }
 .acu-content li {
     list-style-type: disc;
-    margin-left: 50px;
+    margin-left: 20px;
+    color: var(--plum);
+    font-size: 20px;
 }
 #acu-hidden-content ul{
-    padding-inline: 15%;
+    padding-inline: 5%;
+    
 }
+
+.acu-container-fold {
+    align-items: center;
+    max-width: 100%;
+    background-color: #fff;
+    padding-left: 16%;  /* 左边留空 */
+    padding-right: 50%;
+    
+}
+
+.acu-container-fold h1 {
+    padding-top: 20px; 
+    color: #29772c;
+    margin-top: 0; 
+    cursor: pointer;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.acu-container-fold h1 {
+    display: flex;
+    align-items: center;
+}
+
+.acu-container-fold .toggle-icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
