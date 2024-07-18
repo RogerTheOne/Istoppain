@@ -8,10 +8,14 @@ h4 {
     color:#FAC2C7;
     font-size:20px;
 }
+
 footer {
     background-color: #29772c;
     padding: 20px 5% 62px 5%;
     text-align:center;
+    display: flex;
+    
+    
 }
 
 footer p {
@@ -32,16 +36,10 @@ footer span {
     width:50%;
 }
 
-.footer-column-1 {
-    margin-bottom:48px;
-}
-
-.footer-column-2 {
-    margin-bottom:48px;
-}
-
-.footer-column-3 {
-    margin-bottom:48px;
+.footer-column-1, .footer-column-2, .footer-column-3, .footer-column-4 {
+    flex: 1;
+    margin-bottom: 48px;
+    text-align: center;
 }
 
 .parent-site {
