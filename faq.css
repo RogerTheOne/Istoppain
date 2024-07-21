@@ -1,0 +1,122 @@
+/*image title*/
+.hrb-image-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hrb-image-container img {
+    width: 100%;
+    height: auto;
+}
+.blurred-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(8px);
+    z-index: 1;
+}
+
+.hrb-title-text {
+    font-family: 'Calistoga', serif;
+    position: relative;
+    z-index: 2;
+    font-size: 200px;
+    color: #eee5e5;
+    white-space: nowrap;
+    font-weight: bold;
+}
+
+/*faq section*/
+
+#faq-container {
+    width: 75%;
+    display: block;
+    margin: auto;
+    margin-bottom: 12rem;
+}
+html, body {
+overflow-x: hidden;
+}
+
+.page-content {
+width: 100%;
+max-width: 1500px;
+margin: 0 auto;
+padding: 0 15px;
+}
+
+#icon1{
+    color: white;
+}
+
+@media screen and (max-width: 760px) {
+    .page-content {
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .page-content {
+        padding: 0 5px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .page-content {
+        padding: 0;
+    }
+}
+
+
+
+    @media screen and (max-width: 760px) {
+    #faq-container {
+        width: 90%;
+    }
+
+    
+}
+
+.answers.show {
+    display: block; /* show answers when the show class is present */
+}
+
+  .main-heading {
+    display: flex;
+    margin-top: 30px;
+    padding: 20px;
+    background: #1c413b;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0 1px 4px;
+    cursor: pointer;
+  }
+
+  .main-heading h3 {
+    margin-left: 30px;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 23px;
+  }
+  .main-heading p {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .answers {
+    padding: 30px 20px 40px 20px;
+    font-size: 20px;
+    font-weight: 500;
+    background:   #0f9437;
+    color: white;
+    border-radius: 0 0 5px 5px;
+    display: none;
+  }

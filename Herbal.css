@@ -22,18 +22,17 @@
 }
 
 .hrb-title-text {
+    font-family: 'Calistoga', serif;
     position: relative;
     z-index: 2;
     font-size: 200px;
-    color: white;
+    color: #eee5e5;
     white-space: nowrap;
     font-weight: bold;
 }
 
 .hrb-container {
-    display: flex;
-    flex-direction: column;
-
+    align-items: center;
     max-width: 100%;
     padding-inline: 2%;
     background-color: #fff;
@@ -48,6 +47,10 @@
     font-size: 20px;
     line-height: 1.5;
     padding-inline: 15%;
+}
+
+.hrb-container.last p:nth-of-type(2){
+    padding-bottom: 70px;
 }
 
 .container {

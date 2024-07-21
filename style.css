@@ -27,11 +27,9 @@ h2 {
 }
 
 h3 {
-    font-family: 'Calistoga', serif;
+    font-family: 'Source Sans 3', sans-serif;
     color:var(--egg); 
-    font-size: 40px;
-    line-height: 50px;
-    margin-bottom: 56px;
+    font-size: 50px;
 }
 
 h4 {

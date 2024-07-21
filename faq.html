@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>faq</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navigation.css">
+    <link rel="stylesheet" href="footer.css">
+    
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <script src="https://kit.fontawesome.com/b08b6de27e.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <img src="pic/logo.png" alt="Chinese Medicine Centre">
+        </div>
+        <ul class="navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="acupunture.html">Acupuncture</a></li>
+            <li><a href="herbal.html" class="active">Herbal Remedy</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="hours-and-fees.html">Hours and Fees</a></li>
+        </ul>
+    </nav>
+
+    <div class="hrb-image-container"> <!-- 更改类名 -->
+        <img src="pic/cover7_cropped_correct.jpg" alt="pic" class="blurred-background">
+        <div class="hrb-title-text">FAQ</div> <!-- 更改类名 -->
+    </div>
+
+    <div id="page-content" class="page-content">
+        <div class="banner">
+            <div class="text-center rounded-0" style="background-image: url('assets/img/logo/nn.png');">
+                <div class="container">
+                    <h1 class="pt-5">
+                      FAQ
+                    </h1>
+                    <p class="lead">
+                    </p>
+                </div>
+            </div>
+        </div>
+    
+        <div id="faq-container">
+            <div class="main-heading" onclick="toggleAnswer('question1')">
+                <p id="icon1">➕</p>
+                <h3>What happens during an acupuncture treatment?</h3>
+            </div>
+            <p id="question1" class="answers">Many people may be unfamiliar with what exactly takes place in an acupuncture session. Wondering what happens during treatment, how many visits may be needed and whether health insurance covers it are all common concerns. In a typical first visit, a practitioner will take a detailed health history, fully investigate your chief complaint and provide acupuncture for you.<br><br>This may take up to an hour and a half but is necessary to create an individualized treatment plan that takes into account your present physical, emotional, and nutritional condition, while focusing on your main health concern. Acupuncture is the insertion of very fine needles (the width of two human hairs) into specific anatomical points. Return visits to an acupuncturist may also introduce the option of Chinese herbal therapy. Chinese herbal therapy reinforces acupuncture in a natural way without side-effects. The two are often used together to strengthen the effects of treatment and to achieve longer-lasting results in a shorter amount of time.</p>
+            
+    
+            <div class="main-heading" onclick="toggleAnswer('question2')">
+                <p id="icon2">➕</p>
+                <h3>What does acupuncture treat?</h3>
+            </div>
+            <p id="question2" class="answers">Currently, the NIH has determined that acupuncture is effective in treating over 40 different disease categories. Following is a list of illnesses and conditions for which acupuncture has been proven to be effective. It is possible to treat these and many other conditions with acupuncture and Chinese medicine.</p>
+    
+            <div class="main-heading" onclick="toggleAnswer('question3')">
+                <p id="icon3">➕</p>
+                <h3>How does it work?</h3>
+            </div>
+            <p id="question3" class="answers">Currently, there are a number of theories as to how exactly acupuncture works. It was once thought that inserting needles into specific parts of the body affected nerves and could inhibit their signal transmission. This was thought to explain why acupuncture could treat pain so well. But when doctors mapped the acupuncture points over the known nerve network they found that there was some correlation, but not nearly enough to explain most of its effects.<br><br>Another theory stated that acupuncture stimulates the release of opioids and endorphins in the central nervous system. Although this could explain certain analgesic effects, it could not explain many others.<br><br>The most current theory speculates that acupuncture points are actually strategic conductors of electromagnetic signals throughout the body. Stimulating points along these pathways influences neurotransmitter rates and resets the polarity of different parts of the body. This latest theory is by far the most comprehensive and most promising explanation for why acupuncture works in Western medical terminology.
+
+            </p>
+    
+            <div class="main-heading" onclick="toggleAnswer('question4')">
+                <p id="icon4">➕</p>
+                <h3>Does it hurt?</h3>
+            </div>
+            <p id="question4" class="answers">Acupuncture in general is not painful. The needles are extremely thin (about the width of 2 human hairs), solid, disposable and flexible. Sensations that patients normally experience are a dull ache or tingling which is associated with the movement of energy stimulated by the insertion of the needles. This is a desired affect and should not feel painful.</p>
+    
+            <div class="main-heading" onclick="toggleAnswer('question5')">
+                <p id="icon4">➕</p>
+                <h3>How many visits will I need?</h3>
+            </div>
+            <p id="question5" class="answers">The number of visits you will need depends on several factors.
+                <br><br>One is how long you have had your current condition. Acute conditions, like a cold or flu will generally only require one or two treatments. Conditions that are more recent, like sudden pain from an injury or seasonal allergies may require 3 or 4 treatments before symptoms are reduced. Chronic conditions like PMS, asthma, back pain or other problems that you have had for many years may take anywhere from 4 to 10 treatments until you notice significant changes. 
+                <br<br>At your first visit, your acupuncturist will take a detailed health history and will determine an appropriate treatment plan based on your signs and symptoms and the findings of that visit.
+            </p>
+        </div>
+    </div>
+
+    <script>
+        function toggleAnswer(id) {
+    var answer = document.getElementById(id);
+    if (answer) {
+        if (answer.style.display === "block") {
+            answer.style.display = "none";
+            document.getElementById("icon" + id.charAt(id.length - 1)).innerText = "➕";
+        } else {
+            answer.style.display = "block";
+            document.getElementById("icon" + id.charAt(id.length - 1)).innerText = "➖";
+        }
+    }
+    }
+    </script>
+
+
+    <footer>
+        <div class="footer-column-1">
+          <img src="pic/logo.png" alt="I Stop Pain">
+          <p id="pink">© I Stop Pain</p>
+        </div>
+    
+        <div class="footer-column-2">
+          <h4>Site Map</h4>
+            <ul>
+            
+              <li><a href="index.html" target="_blank"> Home </a></li>
+              <li><a href="about.html" target="_blank"> About </a></li>
+              <li><a href="acupunture.html" target="_blank"> Acupuncture </a></li>
+              <li><a href="herbal-remedy.html" target="_blank"> Herbal Remedy </a></li>
+              <li><a href="contact.html" target="_blank"> Hours and Fees </a></li>
+              
+            </ul>
+        </div>
+    
+        <div class="footer-column-3">
+          <h4>Reach Out</h4>
+          <p>tianyuan@istoppain.ca</p>
+          <p>(902) 444-3111</p>
+    
+          <div class="parent-site">
+            <a href="http://www.istoppain.ca/default.html" target="_blank"><span>⬥</span>Visit Our Old Site →</a>
+          </div>
+        </div>
+    
+        <div class="footer-column-4">
+          <h4>Address</h4>
+          <p>6021 Young Street. Halifax, NS B3K 2A1</p>
+          <p id="pink">Monday to Friday from 8 am to 9 pm.</p>
+    
+          <div class="social-media">
+            <a href="#" target="_blank"><img src="pic/social-tiktok.png" alt="TikTok"></a>
+                <a href="#" target="_blank"><img src="pic/social-insta.png" alt="Instagram"></a>
+                <a href="#" target="_blank"><img src="pic/social-youtube.png" alt="Youtube"></a>
+          </div>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+    <link rel="stylesheet" href="faq.css">
+</body>
+</html>
