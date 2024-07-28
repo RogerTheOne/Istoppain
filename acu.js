@@ -6,10 +6,10 @@ document.addEventListener("DOMContentLoaded", function() {
     toggleView.addEventListener("click", function() {
         if (hiddenContent.style.display === "none" || hiddenContent.style.display === "") {
             hiddenContent.style.display = "block";
-            toggleIcon.textContent = "-";
+            toggleIcon.textContent = "➕";
         } else {
             hiddenContent.style.display = "none";
-            toggleIcon.textContent = "+";
+            toggleIcon.textContent = "➕";
         }
     });
 });

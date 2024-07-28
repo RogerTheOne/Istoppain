@@ -1,17 +1,7 @@
-.acu-toggle-content {
-    cursor: pointer;
-    font-size: 16px;
-    padding: 10px;
-    background-color: #f5f5f5;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 5px;
-    display: inline-block;
-}
+
 .acu-content {
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    
     background-color: #fff;
     display: none;
     width: auto;
@@ -29,14 +19,14 @@
 .acu-image-container {
     position: relative;
     width: 100%;
-    height: 100vh; 
+    height: 70vh; 
     display: flex;
     justify-content: center; 
     align-items: center; 
 }
 .acu-image-container img {
     width: 100%;
-    height: auto;
+    height: 70vh;
 }
 .blurred-background {
     position: absolute;
@@ -50,9 +40,10 @@
 }
 
 .acu-title-text {
+    font-family: 'Calistoga', serif;
     position: relative;
     z-index: 2;
-    font-size: 200px; 
+    font-size: 170px;
     color: white; 
     white-space: nowrap; 
     font-weight: bold;
@@ -80,15 +71,13 @@
 .acu-container.last p:nth-of-type(2){
     padding-bottom: 70px;
 }
-
 .acu-toggle-content {
     cursor: pointer;
-    font-size: 30px; 
-    color: #333;
-    line-height: 1.6;
-    margin-bottom: 20px;
-    font-weight: bold;
-    color: #29772c;
+    font-size: 30px;
+    
+    border-bottom: 1px solid rgb(0, 0, 0);
+    margin-bottom: 5px;
+    display: inline-block;
 }
 
 .acu-content p, .acu-content li {
@@ -112,13 +101,13 @@
     align-items: center;
     max-width: 100%;
     background-color: #fff;
-    padding-left: 16%;  /* 左边留空 */
-    padding-right: 50%;
+    padding-left: 17%;  /* 左边留空 */
+    padding-right: 17%
     
 }
 
 .acu-container-fold h1 {
-    padding-top: 20px; 
+    
     color: #29772c;
     margin-top: 0; 
     cursor: pointer;
