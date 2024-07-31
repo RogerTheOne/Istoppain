@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.hrb-container {
+    align-items: center;
+    max-width: 100%;
+    padding-inline: 2%;
+    background-color: #fff;
+}
+.hrb-container h1 {
+    padding-top: 70px;
+    color: #29772c;
+    padding-inline: 15%;
+    margin-top: 5%;
+}
+.hrb-container p {
+    font-size: 20px;
+    line-height: 1.5;
+    padding-inline: 15%;
+}
+.hrb-container.last p:nth-of-type(2) {
+    padding-bottom: 70px;
+}
+.hours-rates-container {
+    max-width: 100%;
+    padding-inline: 2%;
+    background-color: #fff;
+}
+.hours-rates-container h1 {
+    color: #29772c;
+    padding-top: 70px;
+    padding-inline: 15%;
+    margin-top: 5%;
+}
+.hours-rates-container p {
+    font-size: 20px;
+    line-height: 1.5;
+    padding-inline: 15%;
+}
+.rates-table {
+    width: 70%; 
+    margin: 0 auto;
+    border-collapse: collapse;
+    margin-bottom: 70px;
+    padding-inline: 15%;
+}
+.rates-table th, .rates-table td {
+    border: 1px solid #29772c;
+    padding: 15px;
+    text-align: left;
+}
+.rates-table th {
+    background-color: #29772c;
+    color: white;
+}
+.rates-table td {
+    background-color: #f9f9f9;
+}
